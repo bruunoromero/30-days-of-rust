@@ -1,5 +1,7 @@
 #![allow(non_snake_case)]
 
+use utils::read_line;
+
 struct Person {
     age: i32,
 }
@@ -47,12 +49,4 @@ fn main() {
         p.amIOld();
         println!("");
     }
-}
-
-fn read_line() -> String {
-    let mut input = String::new();
-    std::io::stdin()
-        .read_line(&mut input)
-        .expect("Could not read stdin!");
-    return input;
 }
